@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezerwacja Hotelu - Liczba Osób</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        .form-group { 
+            background-color: #f4f4f4; 
+            padding: 15px; 
+            margin-bottom: 15px; 
+            border-radius: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Rezerwacja Hotelu</h1>
+    <form action="guest_details.php" method="get">
+        <label>Wybierz liczbę osób:</label>
+        <select name="num_guests" required>
+            <option value="">Wybierz liczbę osób</option>
+            <option value="1">1 osoba</option>
+            <option value="2">2 osoby</option>
+            <option value="3">3 osoby</option>
+            <option value="4">4 osoby</option>
+        </select>
+        <button type="submit">Dalej</button>
+    </form>
+</body>
+</html>
