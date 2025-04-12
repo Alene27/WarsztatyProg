@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="calculator">
+            <h2>Calc</h2>
+            
+            <form method="post" action="index.php">
+                <div class="form-group">
+                    <label for="liczba1">Pierwsza liczba:</label>
+                    <input type="number" id="liczba1" name="liczba1" step="any" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="liczba2">Druga liczba:</label>
+                    <input type="number" id="liczba2" name="liczba2" step="any" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dzialanie">Wybierz działanie:</label>
+                    <select id="dzialanie" name="dzialanie" required>
+                        <option value="dodawanie">Dodawanie (+)</option>
+                        <option value="odejmowanie">Odejmowanie (-)</option>
+                        <option value="mnozenie">Mnożenie (*)</option>
+                        <option value="dzielenie">Dzielenie (/)</option>
+                    </select>
+                </div>
+                
+                <button type="submit" name="oblicz">Oblicz</button>
+            </form>
+            
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
