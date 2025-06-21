@@ -47,21 +47,21 @@ Każde sprawdzenie zapisuje w bazie:
 
 ```
 src/main/java/pl/pjatk/jazs29866nbp/
-├── JazS29866NbpApplication.java   # Główna klasa
-├── NbpController.java             # Obsługa strony
-├── NbpService.java               # Logika
-├── NbpRepository.java            # Baza danych
-├── ExchangeRateQuery.java        # Tabela w bazie
-└── AppConfig.java                # Konfiguracja
+├── JazS29866NbpApplication.java   
+├── NbpController.java             
+├── NbpService.java               
+├── NbpRepository.java            
+├── ExchangeRateQuery.java        
+└── AppConfig.java                
 
 src/main/resources/
-├── templates/index.html          # Strona internetowa
-└── application.properties       # Ustawienia bazy
+├── templates/index.html          
+└── application.properties       
 
-pom.xml                          # Zależności Maven
+pom.xml                          
 ```
 
- Konfiguracja bazy (application.properties)
+ Konfiguracja bazy 
 
 ```properties
 spring.datasource.url=jdbc:mysql://szuflandia.pjwstk.edu.pl:3306/s29866
@@ -70,7 +70,7 @@ spring.datasource.password=Ale.Kozl
 spring.jpa.hibernate.ddl-auto=update
 ```
 
- API (dla programistów)
+ API
 
 ```
 GET /api/average-rate?currency=USD&startDate=2024-01-01&endDate=2024-01-31
