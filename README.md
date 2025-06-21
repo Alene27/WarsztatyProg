@@ -3,13 +3,9 @@ Instrukcja - NBP
 Co to jest?
 Aplikacja do sprawdzania średniego kursu waluty z wybranego okresu.
 
-Jak uruchomić?
-```
-mvn spring-boot:run
-```
-Potem wejdź na: `http://localhost:8080`
+Wchodzimy na: `http://localhost:8080`
 
-Jak sprawdzić kurs?
+Sprawdzanie kursu:
 
  1. Wpisz walutę
 Przykłady: USD, EUR, GBP, CHF
@@ -76,7 +72,7 @@ spring.jpa.hibernate.ddl-auto=update
 GET /api/average-rate?currency=USD&startDate=2024-01-01&endDate=2024-01-31
 ```
 
-Zwraca JSON:
+JSON:
 ```json
 {
   "currency": "USD",
